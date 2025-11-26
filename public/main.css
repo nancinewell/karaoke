@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    
+    --blueGray: #151D27;
+    --red: #9E3441;
+    --orange: #D25B55;
+    --gray: #B3AFC6;
+    --lightBlue: #769EA8;
+    --blue:#4D7E8A;
+    --darkBlue: #374F5B;
+
+    --row-h: 4rem;     /* per-item height (adjust to taste) */
+    --row-gap: 0.5rem; /* grid gap between rows */
+  }
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    /* display: grid;
+    grid-template-rows: 1fr 10fr 1fr; */
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    height: 100vh;
+}
+
+body, button, input{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>;
+    font-style: normal; */
+}
+
+
+header, main, footer{
+    padding: 1em;
+}
+/* * * * * * * * * * * * * * HEADER * * * * * * * * * * * * * */
+header{
+    background-color: var(--darkBlue);
+    height: 5em;
+    color: var(--lightBlue);
+}
+/* * * * * * * * * * * * * * MAIN * * * * * * * * * * * * * */
+main{
+    background-color: var(--blueGray);
+    height: 100%;
+    max-height: 100%;
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+main button{
+    background-color: var(--darkBlue);
+    /* margin: 1em; */
+    border-radius: 5px;
+    color: var(--gray);
+    height: 2.5rem;
+}
+
+ol{
+    display: grid;
+    /* grid-template-rows: repeat(10, 1fr); */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100%;
+    min-width: 500px;
+    justify-content: center;
+}
+
+li{
+    height: var(--row-h);
+    font-size: 1.5em;
+}
+
+.li-div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 500px;
+    
+}
+
+/* * * * * * * * * * * * * * FOOTER * * * * * * * * * * * * * */
+footer{
+    background-color: (--blue);
+    height: 5em;
+    display: flex;
+    justify-content: center;
+}
+label{
+    margin-right: 1em;
+}
+input{
+    padding: 1em;
+    margin-right: 1em;
+}
+button{
+    padding:5px;
+}
