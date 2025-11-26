@@ -78,6 +78,11 @@ ol{
     justify-content: center;
 }
 
+ol>div:first-child{
+    font-weight: bold;
+    font-size: 2em;
+}
+
 li{
     height: var(--row-h);
     font-size: 1.5em;
