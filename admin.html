@@ -9,9 +9,6 @@
     <script src="js/main.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Karaoke Manager</h1>
-    </header>
     <main id="admin">
         <div id="admin-container">
             <ol id="singer-container">
@@ -46,6 +43,7 @@
                 </form>
 
                 <button id="clear-active-list" type="submit" onclick="clearActiveList()">Clear Active List</button>
+                
             </div>
             <!-- add singer to master list -->
             <!-- add singer from master to display -->
@@ -53,7 +51,9 @@
         </div>
         
     </main>
-
+    <footer class="admin">
+        <a href="index.html" target="_blank">Open Display</a>
+    </footer>
     <script>
         document.addEventListener('DOMContentLoaded', function(){
             // TestFun();

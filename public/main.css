@@ -72,8 +72,8 @@ main{
     padding: 0 var(--main-padding)  
 }
 main#admin{
-    height: 90vh;
-    max-height: 90vh;;
+    height: 100vh;
+    max-height: 100vh;;
 }
 
 .display-main{
@@ -177,7 +177,7 @@ div#admin-container{
     height: 80vh;
     padding: .25em;
     justify-content: center;
-    gap: .5em;
+    gap: .25em;
     /* display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,7 +191,7 @@ div#admin-container{
 
 /* #add-to-active-form, #add-to-master-form */
 form{
-    font-size: .5em;
+    font-size: .3em;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -242,6 +242,15 @@ footer{
     display: flex;
     justify-content: space-around;
     color: black;
+}
+
+footer.admin{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+footer.admin a{
+    color: var(--gray);
 }
 
 button{
