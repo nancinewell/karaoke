@@ -7,23 +7,32 @@
     <link rel="stylesheet" type="text/css" href="public/main.css" /> 
     <script src="js/main.js"></script>
 </head>
-<body>
+<body onload="showSingers();">
     <header>
         <h1>Karaoke Lineup</h1>
+        <h1><span id="total-count"></span> Singers in Line</h1>
     </header>
     <main>
-        <!-- list names -->
-         <ol id="singer-container">
+        <div class="display-main">
+            <div class="list-container">
+                <p>Singing Now</p>
+                <p>Singing Next</p>
+            </div>
+            <div class="list-container">
+                <ol id="singer-container">
 
-         </ol>
+                </ol>
+            </div>
+            
+         
+        </div>
     </main>
     <footer>
-        <!-- add name -->
-            <form id="singer-form">
-                <label for="singer">Add Singer</label>
-                <input name="singer" id="singer" type="text">
-                <button type="submit">Submit</button>
-            </form>
+            
+            <h1>Karaoke ends at 11:00pm</h1>
     </footer>
+    <script>
+    setInterval(showSingers, 5000);
+    </script>
 </body>
 </html>
