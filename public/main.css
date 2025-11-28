@@ -3,13 +3,13 @@
 :root{
     
     --blueGray: #151D27;
-    --highlight: #ffbbbb;
-    --lowlight: #ffe7b8;
+    --highlight: #b6c5e5;
+    --lowlight: #fff776;
     /* --gray: #B3AFC6; */
     --gray: #dad8e2;
     --lightBlue: #769EA8;
     --blue:#4D7E8A;
-    --darkBlue: #374F5B;
+    --darkBlue: #071c4d;
 
     --row-h: 4rem;     /* per-item height (adjust to taste) */
     --row-gap: 0.5rem; /* grid gap between rows */
@@ -71,38 +71,45 @@ main{
     font-size: 3em;  
     padding: 0 var(--main-padding)  
 }
+main#admin{
+    height: 90vh;
+    max-height: 90vh;;
+}
 
 .display-main{
     display: grid;
     grid-template-columns: 300px 1fr;
     height: 85vh;
-    width: 97vw;    
+    width: 97vw;  
+    gap: 1em;  
 }
 
 
 #singer-container, .list-container:first-child{
     display: grid;
     grid-auto-flow: column;              /* fill down first, then across */
-    grid-template-rows: repeat(auto-fill, minmax(2em, auto));
-    gap: 0.5em 2em;                      /* row gap, column gap */
+    grid-template-rows: repeat(10, minmax(1em, auto));
+    gap: 0.5em 2em;          
+                /* row gap, column gap */
     /* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start; */
     
     min-width: 350px;
-    
     font-weight: bold;
     gap: 0 3em;
     height: 75vh;
+    width: 100%;
 }
-
+#singer-container{
+    margin-left: 1em;
+}
 .list-container{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    overflow-y: auto;
     width: 100%;
     padding: var(--main-padding) 0
 }
@@ -147,6 +154,7 @@ main button{
 div#admin-container{
     display: grid;
     grid-template-columns: auto auto;
+    margin-top: .5em;
 }
 #admin>#admin-container>#singer-container{
     font-size: .5em;
@@ -214,10 +222,6 @@ input{
     /* margin-top: 2em; */
 }
 
-#next-singer{
-    background-color: var(--highlight);
-    color: var(--blueGray)
-}
 
 a{
     color: var(--blue);
@@ -237,6 +241,7 @@ footer{
     height: 5vh;
     display: flex;
     justify-content: space-around;
+    color: black;
 }
 
 button{
